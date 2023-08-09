@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>博客网站</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+       <h1>博客网站</h1>
+       <nav>
+           <ul>
+               <li><a href="index.html">首页</a></li>
+               <li><a href="archive.html">归档</a></li>
+               <li><a href="about.html">关于我</a></li>
+           </ul>
+       </nav>
+   </header>
+   <main>
+       <h2>最新文章</h2>
+       <ul id="posts">
+           <!-- 在这里添加文章列表 -->
+       </ul>
+       <h2>评论</h2>
+       <form id="comment-form">
+           <label for="comment-author">姓名：</label>
+           <input type="text" id="comment-author" name="comment-author" required>
+           <label for="comment-content">评论：</label>
+           <textarea id="comment-content" name="comment-content" required></textarea>
+           <button type="submit">提交</button>
+       </form>
+       <div id="comments"></div>
+   </main>
+   <footer>
+       <p>版权所有 &copy; 2022 博客网站</p>
+   </footer>
+   <script src="scripts.js"></script>
+</body>
+</html>
